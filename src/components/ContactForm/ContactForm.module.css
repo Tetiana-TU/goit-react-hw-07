@@ -1,0 +1,39 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: left;
+
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #e2c8d3;
+  box-shadow: inset 6px 6px 12px #b8b8b8, inset -6px -6px 12px #ffffff;
+  font-size: 16px;
+  outline: none;
+  transition: box-shadow 250ms linear;
+}
+.btn {
+  display: block;
+  background-color: #e2c8d3;
+  box-shadow: 6px 6px 12px #b8b8b8, -6px -6px 12px #ffffff;
+  color: black;
+  padding: 10px 28px;
+  min-width: 110px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: box-shadow 250ms linear, transform 250ms linear;
+}
+.error {
+  color: red;
+  font-size: 12px;
+}

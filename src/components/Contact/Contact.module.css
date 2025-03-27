@@ -1,0 +1,23 @@
+.container {
+  /* border: 1px solid black; */
+  border-radius: 4px;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  color: black;
+  background-color: #e2c8d3;
+  box-shadow: inset 6px 6px 12px #b8b8b8, inset -6px -6px 12px #ffffff;
+  transition: box-shadow 250ms linear;
+}
+
+.contactcontainer {
+  display: flex;
+  flex-direction: column;
+}
+.conticon {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}

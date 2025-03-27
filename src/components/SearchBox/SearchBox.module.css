@@ -1,0 +1,21 @@
+.label {
+  margin: 0;
+  display: flex;
+  text-align: left;
+}
+.containerSearchBox {
+  display: flex;
+  flex-direction: column;
+}
+.field {
+  text-align: left;
+
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #e2c8d3;
+  box-shadow: inset 6px 6px 12px #b8b8b8, inset -6px -6px 12px #ffffff;
+  font-size: 16px;
+  outline: none;
+  transition: box-shadow 250ms linear;
+}
