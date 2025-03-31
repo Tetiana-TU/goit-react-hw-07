@@ -9,7 +9,6 @@ import "./App.css";
 const App = () => {
   const dispatch = useDispatch();
   useEffect(() => {
-    // Завантаження контактів при монтуванні компонента
     dispatch(fetchContacts());
   }, [dispatch]);
 

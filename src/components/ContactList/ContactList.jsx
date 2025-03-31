@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchContacts, deleteContact } from "../../redux/contactsOps";
+import { deleteContact } from "../../redux/contactsOps";
 import Contact from "../Contact/Contact";
 import css from "./ContactList.module.css";
 import {
@@ -8,19 +8,12 @@ import {
   selectLoading,
   selectError,
 } from "../../redux/contactsSlice";
-import { selectFilterName } from "../../redux/filtersSlice";
 
 const ContactList = () => {
   const dispatch = useDispatch();
   const filteredContacts = useSelector(selectFilteredContacts);
-  const filterName = useSelector(selectFilterName);
-  console.log(filterName);
   const loading = useSelector(selectLoading);
   const error = useSelector(selectError);
-
-  useEffect(() => {
-    dispatch(fetchContacts());
-  }, [dispatch]);
 
   const handleDelete = (contactId) => {
     dispatch(deleteContact(contactId));
